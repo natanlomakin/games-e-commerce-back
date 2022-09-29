@@ -6,15 +6,15 @@ from django.contrib.auth.models import User
 class GameImages(models.Model):
     gameTitle = models.CharField(max_length=50, null=True, blank=True)
     imageOne = models.ImageField(
-        null=True, blank=True, default='images/placeholder.png', upload_to='images/')
+        null=True, blank=True, default='images/placeholder.png', upload_to='images/games')
     imageTwo = models.ImageField(
-        null=True, blank=True, default='images/placeholder.png', upload_to='images/')
+        null=True, blank=True, default='images/placeholder.png', upload_to='images/games')
     imageThree = models.ImageField(
-        null=True, blank=True, default='images/placeholder.png', upload_to='images/')
+        null=True, blank=True, default='images/placeholder.png', upload_to='images/games')
     imageFour = models.ImageField(
-        null=True, blank=True, default='images/placeholder.png', upload_to='images/')
+        null=True, blank=True, default='images/placeholder.png', upload_to='images/games')
     imageFive = models.ImageField(
-        null=True, blank=True, default='images/placeholder.png', upload_to='images/')
+        null=True, blank=True, default='images/placeholder.png', upload_to='images/games')
     _id = models.AutoField(primary_key=True, editable=False)
     fields = ['_id', 'imageOne', 'imageTwo',
               'imageThree', 'imageFour', 'imageFive']

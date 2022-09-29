@@ -29,6 +29,7 @@ def deleteGameFromUsersCart(request, pk=-1):
 @permission_classes([IsAuthenticated])
 def addGameToUserCart(request):
     print(request.data)
+    print(request.user.id)
     serializer = CartSerializer(data=request.data)
     if serializer.is_valid():
         serializer.save()
